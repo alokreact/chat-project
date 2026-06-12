@@ -1,0 +1,8 @@
+[
+  { "id": 1, "name": "General Physician" },
+  { "id": 2, "name": "Dentist" },
+  { "id": 3, "name": "Cardiologist" },
+  { "id": 4, "name": "Dermatologist" },
+  { "id": 5, "name": "Orthopedic" },
+  { "id": 6, "name": "Pediatrician" }
+]

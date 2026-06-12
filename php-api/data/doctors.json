@@ -1,0 +1,10 @@
+[
+  { "id": 1, "name": "Dr. Smith", "category_id": 1 },
+  { "id": 2, "name": "Dr. Johnson", "category_id": 1 },
+  { "id": 3, "name": "Dr. Williams", "category_id": 2 },
+  { "id": 4, "name": "Dr. Brown", "category_id": 2 },
+  { "id": 5, "name": "Dr. Davis", "category_id": 3 },
+  { "id": 6, "name": "Dr. Miller", "category_id": 4 },
+  { "id": 7, "name": "Dr. Wilson", "category_id": 5 },
+  { "id": 8, "name": "Dr. Taylor", "category_id": 6 }
+]
