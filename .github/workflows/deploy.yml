@@ -1,0 +1,24 @@
+name: Deploy Chat Project
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            cd ~/chat-project || git clone ${{ github.server_url }}/${{ github.repository }}.git ~/chat-project
+            cd ~/chat-project
+            git pull origin main
+            docker compose down
+            docker compose up -d --build
